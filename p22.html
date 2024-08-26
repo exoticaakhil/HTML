@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>progress tag</h1>
+    <progress id="mypro" style="width: 60vm;" value="10" min="0" max="100"></progress>
+    <h3 id="res"></h3>
+    <script>
+        var pg= document.getElementById("mypro");
+        var out=document.getElementById("res");
+        var x=0;
+        function handleprogress(){
+            if(x < 100){
+                x+=1;
+                pg.value =x;
+                out.innerText=`downloding in  progress... ${x}%`;
+
+            } else{
+                out.innerText ="Download completed";
+            }
+        }
+        setInterval(handleprogress,1000)
+    </script>
+</body>
+</html>

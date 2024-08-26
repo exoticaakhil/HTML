@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" autocomplete="" enctype="">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="admin" readonly placeholder="your name...." required>
+        <br><br>
+        <label for="lname">last Name</label>
+        <input type="text" id="lname" name="lname"  placeholder="your name...." required>
+        <br><br>
+        <input type="submit" value="send">
+      </fieldset>
+    </form>
+         <!-- form elements collect data in string query parameters ?name1=value1&name2=value2&name3=value
+         action => sever path/ sever file path/name/url address
+        method=> get => data will be visible
+                 post=> data will be hidden
+        enctype => urlencoded is default encoding format
+                   multipart/form-data => is form includes imput type file
+        autocomplete => on(autofill will on)/off (autofill willbe off)
+        form tags
+
+                    fieldset - create the border line around the form
+                    legend - add the title by breaking the fieldset
+                    input  -15+
+                         text,email,password,radio,checkbox,date,datetime,datetime-local,time
+                         month,week,file,search,colour,tel(deprecated),range,submit,reset,hidden,image,url
+                    labale
+                    select -dropdown single,multiple
+                    textarea
+                    button
+
+         -->
+</body>
+</html>

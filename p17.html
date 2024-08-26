@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            max-width: 600px;
+        }
+        fieldset {
+            border: none;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 20px;
+            vertical-align: top;
+            padding-top: 5px;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        input[type="date"], 
+        input[type="number"], 
+        textarea {
+            width: calc(100% - 150px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+        input[type="radio"] {
+            margin-left: 20px;
+        }
+        .gender {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .gender label {
+            width: auto;
+            margin-right: 10px;
+        }
+        .gender input {
+            margin-right: 5px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .row .col-md-4 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        input[type="submit"], 
+        input[type="reset"] {
+            width: calc(50% - 30px);
+            margin: 0 15px;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, 
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1><b><u>Registration Form</u></b></h1>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" placeholder="Firstname"><br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Lastname"><br>
+            <label for="nname">Nick Name</label>
+            <input type="text" name="nname" placeholder="Nickname"><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="@gmail.com"><br>
+            <label for="pas">Password</label>
+            <input type="password" name="pas" placeholder="Password"><br>
+            <label for="dat">Date of Birth</label>
+            <input type="date" name="dat" placeholder="DOB"><br>
+            <div class="gender">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </div>
+            <label for="phone">Mobile</label>
+            <input type="number" name="phone" placeholder="Phone"><br>
+            <label for="address">Address</label>
+            <textarea name="address" id="address"></textarea><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="col-md-4">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

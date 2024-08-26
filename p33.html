@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #pro{
+         border: 2px solid #222;
+    }
+</style>
+<body>
+    <h1>custom logo in canvas</h1>
+    <canvas id="pro" width="600" height="400"></canvas>
+    <script>
+        function draw(){
+         let canvas = document.getElementById("pro");
+         let context = canvas.getContext("2d");
+            context.beginPath();
+            context.moveTo(165,60);
+            context.lineTo(200,40);
+            context.strokeStyle = "#008000";
+            context.lineWidth = 7;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(200,40);
+            context.lineTo(235,60);
+            context.strokeStyle = "#008000";
+            context.lineWidth = 7;
+            context.stroke();
+            
+
+            context.beginPath();
+            context.moveTo(235,60);
+            context.lineTo(235,95);
+            context.strokeStyle = "#ff0020";
+            context.lineWidth = 7;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(165,95);
+            context.lineTo(165,60);
+            context.strokeStyle = "#ff0020";
+            context.lineWidth = 7;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(235,95);
+            context.lineTo(200,115);
+            context.strokeStyle = "#008000";
+            context.lineWidth = 7;
+            context.stroke();
+
+            context.beginPath();
+            context.moveTo(200,115);
+            context.lineTo(165,95);
+            context.strokeStyle = "#008000";
+            context.lineWidth = 7;
+            context.stroke();
+
+            context.font = "28px Calibri"
+            context.strokeStyle = "red";
+            context.fillText("LOgo",175,88)
+      
+
+
+        }
+        draw()
+    </script>
+</body>
+</html>

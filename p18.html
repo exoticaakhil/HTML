@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            max-width: 600px;
+        }
+        fieldset {
+            border: none;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 20px;
+            vertical-align: top;
+            padding-top: 5px;
+        }
+        input[type="text"], 
+ 
+        input[type="password"]
+ {
+            width: calc(100% - 150px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    
+        input[type="radio"] {
+            margin-left: 20px;
+        }
+        .role {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .role label {
+            width: auto;
+            margin-right: 10px;
+        }
+        .role input {
+            margin-right: 5px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .row .col-md-4 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        input[type="submit"], 
+        input[type="reset"] {
+            width: calc(50% - 30px);
+            margin: 0 15px;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, 
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1><b><u>Novell Services Login</u></b></h1>
+            <label for="uname">Username </label>
+            <input type="text" name="uname" placeholder="Username"><br>
+            <label for="pas">Password</label>
+            <input type="password" name="pas" placeholder="Password"><br>
+            <label for="uname">City of </label>
+            <input type="text" name="uname" placeholder="Username"><br>
+            <label for="uname">Employment </label>
+            <input type="text" name="uname" placeholder="Username"><br>
+            <label for="uname">Web server </label>
+             <select name="" id="">
+                <option value="">--choose a server--</option>
+                <option value="">xhampp</option>
+                <option value="">apche</option>
+             </select>
+            <div class="role">
+                <label for="role">please  specify the role</label>
+                <ul>
+                    <li><input type="radio" name="role" value="Admin">Admin</li>
+                    <li><input type="radio" name="role" value="engineer">engineer</li>
+                    <li><input type="radio" name="role" value="manager">manager</li>
+                    <li><input type="radio" name="role" value="guest">guest</li>
+            </ul>
+            </div>
+            <div class="role">
+                <label for="role">single sign-on to the following </label>
+            <ul>
+                <li><input type="checkbox" name="role" value="Admin">mail</li>
+                <li> <input type="checkbox" name="role" value="engineer">payroll</li>
+                <li><input type="checkbox" name="role" value="manager">selfservice</li>
+            </ul>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="col-md-4">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

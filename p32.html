@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #pro{
+         border: 2px solid #222;
+    }
+</style>
+<body>
+    <h1>Text in canvas</h1>
+    <canvas id="pro" width="600" height="400"></canvas>
+    <script>
+        function draw(){
+         let canvas = document.getElementById("pro");
+         let ctx = canvas.getContext("2d");
+         ctx.font ="32px serif";
+         ctx.fillText("EXOTICA " ,50,60)
+         ctx.strokeText("EXOTICA " ,30,40)
+      
+
+
+        }
+        draw()
+    </script>
+</body>
+</html>
